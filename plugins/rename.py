@@ -15,6 +15,7 @@ from pyrogram.types import (
 from config import DOWNLOAD_DIR, DEFAULT_CAPTION
 from helpers import database as db
 from helpers.progress import progress_callback, human_size
+from helpers.ffmpeg import remove_streams
 
 # In-memory state. Chinna bot ku idhu podhum; periya scale na Redis/DB use pannunga.
 pending_files = {}
